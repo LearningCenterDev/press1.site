@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../css/Career.css";
+import "../css/Career_Temp.css";
 
 import { useNavigate } from "react-router-dom";
 import {
