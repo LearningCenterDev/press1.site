@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../css/Career.css";
+
 import { useNavigate } from "react-router-dom";
 import {
     ArrowLeft,
