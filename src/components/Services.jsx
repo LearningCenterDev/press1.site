@@ -82,7 +82,7 @@ export default function Services() {
                                 {/* IMAGE */}
                                 {s.image ? (
                                     <div className="svc-media" aria-hidden="true">
-                                        <img src={s.image} alt="services-image" />
+                                        <img src={s.image} alt="services-image" loading="LAZY" />
                                     </div>
                                 ) : null}
 
