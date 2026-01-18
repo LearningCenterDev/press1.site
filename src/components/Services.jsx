@@ -16,37 +16,37 @@ const services = [
         title: "Custom Apps (Web or Mobile)",
         desc: "Bespoke application development tailored to your unique business requirements.",
         icon: AppWindow,
-        image: "/src/assets/app.jpg",
+        image: "/src/assets/app.webp",
     },
     {
         title: "SMS Marketing",
         desc: "Direct-to-customer SMS campaigns that drive immediate engagement.",
         icon: MessageSquareText,
-        image: "/src/assets/sms.jpg",
+        image: "/src/assets/sms.webp",
     },
     {
         title: "Email Marketing",
         desc: "Engaging email funnels that nurture leads and boost conversions.",
         icon: MailOpen,
-        image: "/src/assets/email.jpg",
+        image: "/src/assets/email.webp",
     },
     {
         title: "Graphic Designing",
         desc: "Compelling visual assets that strengthen your brand identity.",
         icon: Palette,
-        image: "/src/assets/graphic.jpg",
+        image: "/src/assets/graphic.webp",
     },
     {
         title: "Video Editing",
         desc: "Professional video editing that tells your story beautifully.",
         icon: Video,
-        image: "/src/assets/video.jpg",
+        image: "/src/assets/video.webp",
     },
     {
         title: "Educational Courses",
         desc: "High-quality tech training programs for digital transformation.",
         icon: GraduationCap,
-        image: "/src/assets/education.jpg",
+        image: "/src/assets/education.webp",
     },
 ];
 
@@ -79,10 +79,10 @@ export default function Services() {
 
                         return (
                             <article key={s.title} className="svc-card">
-                                {/* OPTIONAL IMAGE */}
+                                {/* IMAGE */}
                                 {s.image ? (
                                     <div className="svc-media" aria-hidden="true">
-                                        <img src={s.image} alt="" loading="lazy" />
+                                        <img src={s.image} alt="services-image" />
                                     </div>
                                 ) : null}
 

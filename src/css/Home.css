@@ -1,0 +1,44 @@
+:root {
+  /* ✅ adjust this if your navbar height differs */
+  --nav-h: 96px;
+}
+
+/* prevent horizontal scroll on mobile */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+/* Consistent spacing between sections */
+.section {
+  width: 100%;
+}
+
+/* Center & balance content inside each section */
+.section > * {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: clamp(14px, 4vw, 24px);
+  padding-right: clamp(14px, 4vw, 24px);
+}
+
+/* Mobile refinements */
+@media (max-width: 560px) {
+  :root {
+    --nav-h: 66px; /* ✅ mobile navbar usually smaller */
+  }
+}
+
+/* Safety: images should never break layout */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

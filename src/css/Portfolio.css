@@ -1,5 +1,5 @@
 .portfolio {
-  padding: 110px 20px;
+  padding: 50px 20px;
   background: linear-gradient(180deg, #f6f4f1 0%, #ffffff 100%);
 }
 
@@ -60,7 +60,9 @@
   overflow: hidden;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .portfolio-card:hover {

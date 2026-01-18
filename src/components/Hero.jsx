@@ -10,6 +10,7 @@ import {
     Zap,
     TrendingUp,
 } from "lucide-react";
+import heroImage from "../assets/Press1HeroImage.png";
 
 const Hero = () => {
     const [email, setEmail] = useState("");
@@ -23,7 +24,6 @@ const Hero = () => {
     return (
         <section className="hero" id="home">
             <div className="hero-inner">
-
                 {/* LEFT */}
                 <div className="hero-content">
                     <div className="hero-badge">
@@ -37,8 +37,8 @@ const Hero = () => {
 
                     <p className="hero-description">
                         We build modern web & mobile products, cloud systems, and digital
-                        growth solutions with a production-first mindset — secure,
-                        scalable, and conversion-focused.
+                        growth solutions with a production-first mindset — secure, scalable,
+                        and conversion-focused.
                     </p>
 
                     <form className="hero-cta" onSubmit={handleSubmit}>
@@ -56,21 +56,23 @@ const Hero = () => {
 
                     <div className="hero-proof">
                         <div className="proof">
-                            <Lock size={16} />
+                            <Lock size={16} strokeWidth={2} />
                             <span>Secure foundations</span>
                         </div>
+
                         <div className="proof">
-                            <Zap size={16} />
+                            <Zap size={16} strokeWidth={2} />
                             <span>Fast delivery</span>
                         </div>
+
                         <div className="proof">
-                            <TrendingUp size={16} />
+                            <TrendingUp size={16} strokeWidth={2} />
                             <span>Growth focused</span>
                         </div>
                     </div>
                 </div>
 
-                {/* RIGHT – IMAGE VIA URL + FLOATING ICONS */}
+                {/* RIGHT – GLOBAL IT NETWORK IMAGE + FLOATING ICONS */}
                 <div className="hero-art" aria-hidden="true">
                     <div className="art-bg-grid" />
                     <div className="art-glow g1" />
@@ -84,39 +86,38 @@ const Hero = () => {
                         </div>
 
                         <div className="device-screen">
-                            {/* 🔥 Catchy IT / SaaS image */}
+                            {/* ✅ Global IT network style image (similar to yours) */}
                             <img
                                 className="hero-img"
-                                src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1600&auto=format&fit=crop"
-                                alt="Modern IT solutions dashboard"
-                                loading="lazy"
+                                src={heroImage}
+                                alt="Global IT network and cloud infrastructure"
                             />
                         </div>
                     </div>
 
                     {/* Floating chips */}
                     <div className="float f1">
-                        <ShieldCheck size={18} />
+                        <ShieldCheck size={18} strokeWidth={2} />
                         <span>Secure</span>
                     </div>
 
                     <div className="float f2">
-                        <Rocket size={18} />
+                        <Rocket size={18} strokeWidth={2} />
                         <span>Launch</span>
                     </div>
 
                     <div className="float f3">
-                        <Cloud size={18} />
+                        <Cloud size={18} strokeWidth={2} />
                         <span>Cloud</span>
                     </div>
 
                     <div className="float f4">
-                        <Settings2 size={18} />
+                        <Settings2 size={18} strokeWidth={2} />
                         <span>Automation</span>
                     </div>
 
                     <div className="float f5">
-                        <Sparkles size={18} />
+                        <Sparkles size={18} strokeWidth={2} />
                         <span>Premium UI</span>
                     </div>
 
@@ -127,7 +128,6 @@ const Hero = () => {
                     <span className="p p4" />
                     <span className="p p5" />
                 </div>
-
             </div>
         </section>
     );
