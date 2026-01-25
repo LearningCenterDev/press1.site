@@ -10,43 +10,49 @@ import {
     Video,
     GraduationCap,
 } from "lucide-react";
+import Service1 from "../assets/app.webp"
+import Service2 from "../assets/sms.webp"
+import Service3 from "../assets/email.webp"
+import Service4 from "../assets/graphic.webp"
+import Service5 from "../assets/video.webp"
+import Service6 from "../assets/education.webp"
 
 const services = [
     {
         title: "Custom Apps (Web or Mobile)",
         desc: "Bespoke application development tailored to your unique business requirements.",
         icon: AppWindow,
-        image: "/src/assets/app.webp",
+        image: Service1,
     },
     {
         title: "SMS Marketing",
         desc: "Direct-to-customer SMS campaigns that drive immediate engagement.",
         icon: MessageSquareText,
-        image: "/src/assets/sms.webp",
+        image: Service2,
     },
     {
         title: "Email Marketing",
         desc: "Engaging email funnels that nurture leads and boost conversions.",
         icon: MailOpen,
-        image: "/src/assets/email.webp",
+        image: Service3,
     },
     {
         title: "Graphic Designing",
         desc: "Compelling visual assets that strengthen your brand identity.",
         icon: Palette,
-        image: "/src/assets/graphic.webp",
+        image: Service4,
     },
     {
         title: "Video Editing",
         desc: "Professional video editing that tells your story beautifully.",
         icon: Video,
-        image: "/src/assets/video.webp",
+        image: Service5,
     },
     {
         title: "Educational Courses",
         desc: "High-quality tech training programs for digital transformation.",
         icon: GraduationCap,
-        image: "/src/assets/education.webp",
+        image: Service6,
     },
 ];
 
